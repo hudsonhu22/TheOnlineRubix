@@ -1,0 +1,170 @@
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+button {
+  background-color: gray;
+}
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.NavButton {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: gray;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.NavButton:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: underline;
+  transition: text-decoration 3.5s;
+
+}
+
+.rubixContainerFront, .rubixContainerBack, .rubixContainerLeft,
+.rubixContainerRight, .rubixContainerTop, .rubixContainerBottom {
+  border: 10px solid black;
+  margin-top: 100px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  z-index: 500;
+}
+
+
+.RubixBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: fixed;
+  bottom: 20;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.RubixBarReset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: fixed;
+  bottom: 15;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.RubixButton {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: gray;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.RubixButton:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: underline;
+  transition: text-decoration 3.5s;
+}
+
+.topLeft, .topMiddle, .topRight, .middleLeft, .middleMiddle, .middleRight, .bottomLeft, .bottomMiddle, .bottomRight {
+  border: 5px solid black;
+  border-radius: 10%;
+  width: 75px;
+  height: 75px;
+}
+
+.FlattenedRubixContainer {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  z-index: 500;
+  transition: 0.2;
+}
+
+.timerTime {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.RubixOperations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: fixed;
+  bottom: 10;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.TutorialContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.RubiksGIF {
+  max-width: 300px;
+  height: auto;
+  
+}
+
+.TutorialInfo {
+  flex: 1;
+  text-align: left;
+  color: black;
+}
+
+.SettingsInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: fixed;
+  bottom: 10;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: black;
+  font-size: 20px;
+}
